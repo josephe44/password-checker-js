@@ -12,44 +12,32 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
-
-    <!-- CSS Styling -->
-    <style>
-      .container {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        max-width: 400px;
-      }
-      .passwordInput {
-        margin-top: 5%;
-        text-align: center;
-      }
-
-      p {
-        margin: 10px 0;
-      }
-
-      .displayBadge {
-        margin-top: 10px;
-        padding: 10px;
-        font-size: 16px;
-        display: none;
-        text-align: center;
-      }
-    </style>
+    <title>Password Checker App</title>
   </head>
   <body>
     <div class="container">
       <h4 style="margin-top: 10%; text-align: center">Password Checker App</h4>
-      <input
-        type="password"
-        placeholder="Type your password"
-        id="PassEntry"
-        class="form-control passwordInput"
-      />
-      <p id="showPassword"></p>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Type your username"
+          class="form-control passwordInput"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="PassEntry">Password</label>
+        <input
+          type="password"
+          placeholder="Type your password"
+          id="PassEntry"
+          class="form-control passwordInput"
+          required
+        />
+      </div>
+      <button class="btn btn-bg" id="btn">Login</button>
       <span id="StrengthDisp" class="badge displayBadge">Weak</span>
     </div>
   </body>

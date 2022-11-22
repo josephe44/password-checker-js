@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.form-group label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.passwordInput {
+  margin-top: 5px;
+}
+
+p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.displayBadge {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  display: none;
+  text-align: center;
+}
+
+.btn-bg {
+  background-color: #000;
+  color: #fff;
+  transition: all ease 0.3s;
+  margin: 10px 0;
+}
+
+.btn-bg:hover {
+  color: #fff;
+  transform: scale(0.98);
+}
